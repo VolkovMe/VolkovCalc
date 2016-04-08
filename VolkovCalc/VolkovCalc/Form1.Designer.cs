@@ -45,7 +45,7 @@
             this.multiply.TabIndex = 2;
             this.multiply.Text = "*";
             this.multiply.UseVisualStyleBackColor = true;
-            this.multiply.Click += new System.EventHandler(this.multiply_Click);
+            this.multiply.Click += new System.EventHandler(this.CalcSwitch);
             // 
             // textBox1
             // 
@@ -56,7 +56,6 @@
             this.textBox1.Size = new System.Drawing.Size(205, 42);
             this.textBox1.TabIndex = 5;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // plus
             // 
@@ -66,7 +65,7 @@
             this.plus.TabIndex = 6;
             this.plus.Text = "+";
             this.plus.UseVisualStyleBackColor = true;
-            this.plus.Click += new System.EventHandler(this.plus_Click);
+            this.plus.Click += new System.EventHandler(this.CalcSwitch);
             // 
             // minus
             // 
@@ -76,7 +75,7 @@
             this.minus.TabIndex = 7;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = true;
-            this.minus.Click += new System.EventHandler(this.minus_Click);
+            this.minus.Click += new System.EventHandler(this.CalcSwitch);
             // 
             // divided
             // 
@@ -86,7 +85,7 @@
             this.divided.TabIndex = 8;
             this.divided.Text = "/";
             this.divided.UseVisualStyleBackColor = true;
-            this.divided.Click += new System.EventHandler(this.divided_Click);
+            this.divided.Click += new System.EventHandler(this.CalcSwitch);
             // 
             // textBox2
             // 
@@ -122,7 +121,6 @@
             this.Controls.Add(this.multiply);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
