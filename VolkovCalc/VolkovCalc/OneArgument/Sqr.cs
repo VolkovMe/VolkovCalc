@@ -1,4 +1,4 @@
-﻿namespace VolkovCalc
+﻿namespace VolkovCalc.OneArgument
 {
     public class Sqr : ISingleCalc
     {

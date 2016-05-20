@@ -1,4 +1,4 @@
-﻿namespace VolkovCalc
+﻿namespace VolkovCalc.TwoArguments
 {
     public interface ICalculator
     {

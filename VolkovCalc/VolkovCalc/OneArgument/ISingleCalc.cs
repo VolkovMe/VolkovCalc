@@ -1,5 +1,5 @@
 ﻿
-namespace VolkovCalc
+namespace VolkovCalc.OneArgument
 {
       public interface ISingleCalc
     {

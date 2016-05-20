@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace VolkovCalc
+namespace VolkovCalc.OneArgument
 {
     public class Ln : ISingleCalc
     {
