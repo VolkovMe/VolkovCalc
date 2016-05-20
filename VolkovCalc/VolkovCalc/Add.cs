@@ -1,6 +1,6 @@
 ﻿namespace VolkovCalc
 {
-    public class Add
+    public class Add: ICalculator
     {
         public double Calculate(double first, double second)
         {
