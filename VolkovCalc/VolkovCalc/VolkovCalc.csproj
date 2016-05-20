@@ -54,10 +54,16 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="ICalculator.cs" />
+    <Compile Include="ISingleCalc.cs" />
+    <Compile Include="Ln.cs" />
     <Compile Include="Minus.cs" />
     <Compile Include="Multiply.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sin.cs" />
+    <Compile Include="SingleFactory.cs" />
+    <Compile Include="Sqr.cs" />
+    <Compile Include="Sqrt.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

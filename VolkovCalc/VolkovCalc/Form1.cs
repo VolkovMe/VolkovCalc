@@ -24,9 +24,17 @@ namespace VolkovCalc
             ICalculator calculator = Factory.CreateCalculator(((Button)sender).Name);
             double result = calculator.Calculate(first, second);
 
-          
-        
             textBox3.Text = result.ToString();
         }
+
+        private void SingleCalcSwitch(object sender, EventArgs e)
+        {
+            double first = Convert.ToDouble(textBox1.Text);
+            ISingleCalc calculator = SingleFactory.CreateCalculator(((Button)sender).Name);
+            double result = calculator.Calculate(first);
+
+            textBox3.Text = result.ToString();
+        }
+      
     }
 }
