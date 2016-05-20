@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 
 namespace VolkovCalc
 {
@@ -15,13 +14,12 @@ namespace VolkovCalc
                     return new Minus();
                 case "divided":
                     return new Divided();
-                case "Multiply":
+                case "multiply":
                     return new Multiply();
                 default:
                     throw new Exception("Неизвестная операция");
             }
-            
-        }
 
+        }
     }
 }

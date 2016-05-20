@@ -21,24 +21,11 @@ namespace VolkovCalc
         {
             double first = Convert.ToDouble(textBox1.Text);
             double second = Convert.ToDouble(textBox2.Text);
-            double result;
-            switch (((Button) sender).Name)
-            {
-                case "plus":
-                    result = first + second;
-                    break;
-                case "minus":
-                    result = first - second;
-                    break;
-                case "multiply":
-                    result = first*second;
-                    break;
-                case "divided":
-                    result = first/second;
-                    break;
-                default:
-                    throw new Exception("Неизвестная операция");
-            }
+            ICalculator calculator = Factory.CreateCalculator(((Button)sender).Name);
+            double result = calculator.Calculate(first, second);
+
+          
+        
             textBox3.Text = result.ToString();
         }
     }
