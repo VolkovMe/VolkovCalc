@@ -43,8 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SqrTests.cs" />
+    <Compile Include="TwoArgument\AddTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="OneArgument\SqrtTests.cs" />
+    <Compile Include="TwoArgument\DividedTests.cs" />
+    <Compile Include="TwoArgument\MinusTests.cs" />
+    <Compile Include="TwoArgument\MultiplyTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -54,6 +58,9 @@
       <Project>{497944d5-46d3-407a-b420-a13abc3be439}</Project>
       <Name>VolkovCalc</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
