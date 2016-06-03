@@ -2,8 +2,13 @@
 
 namespace VolkovCalc.TwoArguments
 {
-    public class Factory
+    public static class Factory
     {
+        /// <summary>
+        /// Фабрика для операций с двумя аргументами
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns></returns>
         public static ICalculator CreateCalculator(string name)
         {
             switch (name)

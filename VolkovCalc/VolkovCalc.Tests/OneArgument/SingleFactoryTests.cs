@@ -1,7 +1,6 @@
 ﻿using System;
 using NUnit.Framework;
 using VolkovCalc.OneArgument;
-using VolkovCalc.TwoArguments;
 
 namespace VolkovCalc.Tests.OneArgument
 {
