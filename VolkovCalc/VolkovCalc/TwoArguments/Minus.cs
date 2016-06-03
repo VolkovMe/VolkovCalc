@@ -6,10 +6,5 @@
         {
             return first - second;
         }
-
-        public double Calculate(int first)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

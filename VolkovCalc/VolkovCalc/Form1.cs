@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using VolkovCalc.OneArgument;
 using VolkovCalc.TwoArguments;
@@ -21,21 +14,36 @@ namespace VolkovCalc
 
         private void CalcSwitch(object sender, EventArgs e)
         {
-            double first = Convert.ToDouble(textBox1.Text);
-            double second = Convert.ToDouble(textBox2.Text);
-            ICalculator calculator = Factory.CreateCalculator(((Button)sender).Name);
-            double result = calculator.Calculate(first, second);
+            try
+            {
+                double first = Convert.ToDouble(textBox1.Text);
+                double second = Convert.ToDouble(textBox2.Text);
+                ICalculator calculator = Factory.CreateCalculator(((Button)sender).Name);
+                double result = calculator.Calculate(first, second);
 
-            textBox3.Text = result.ToString();
+                textBox3.Text = result.ToString();
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show("Произошла ошибка " + exc.Message);
+            }
+            
         }
 
         private void SingleCalcSwitch(object sender, EventArgs e)
         {
-            double first = Convert.ToDouble(textBox1.Text);
-            ISingleCalc calculator = SingleFactory.CreateCalculator(((Button)sender).Name);
-            double result = calculator.Calculate(first);
+            try
+            {
+                double first = Convert.ToDouble(textBox1.Text);
+                ISingleCalc calculator = SingleFactory.CreateCalculator(((Button)sender).Name);
+                double result = calculator.Calculate(first);
+                textBox3.Text = result.ToString();
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show("Произошла ошибка " + exc.Message);
+            }
 
-            textBox3.Text = result.ToString();
         }
       
     }

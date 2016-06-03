@@ -12,8 +12,8 @@ namespace VolkovCalc.Tests.TwoArgument
         public void CalculateTest(double firstValue, double secondValue, double expected)
         {
             ICalculator calc = new Add();
-            double result = calc.Calculate(5, 5);
-            Assert.AreEqual(10, result);
+            double result = calc.Calculate(firstValue, secondValue);
+            Assert.AreEqual(expected, result);
         }
     }
 }

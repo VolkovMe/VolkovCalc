@@ -12,8 +12,8 @@ namespace VolkovCalc.Tests.OneArgument
         public void LnTest(double firstValue, double expected)
         {
             ISingleCalc calc = new Ln();
-            double result = calc.Calculate(1);
-            Assert.AreEqual(0, result);
+            double result = calc.Calculate(firstValue);
+            Assert.AreEqual(expected, result);
         }
     }
 }

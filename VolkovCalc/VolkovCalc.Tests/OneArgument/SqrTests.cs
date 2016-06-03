@@ -12,8 +12,8 @@ namespace VolkovCalc.Tests.OneArgument
         public void CalculateTest(double firstValue, double expected)
         {
             ISingleCalc calc = new Sqr();
-            double result = calc.Calculate(5);
-            Assert.AreEqual(25, result);
+            double result = calc.Calculate(firstValue);
+            Assert.AreEqual(expected, result);
         }
     }
 }
