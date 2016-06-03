@@ -3,17 +3,17 @@ using VolkovCalc.TwoArguments;
 
 namespace VolkovCalc.Tests.TwoArgument
 {
-     [TestFixture]
+    [TestFixture]
     public class MultiplyTests
     {
-            [Test]
-
-            public void CalculateTest()
-            {
-                ICalculator calc = new Multiply();
-                double result = calc.Calculate(2,2);
-                Assert.AreEqual(4, result);
-            }
+        [TestCase(5, 5, 25)]
+        [TestCase(3, 7, 21)]
+        [TestCase(2, 8, 16)]
+        public void MultiplyTest(double firstValue, double secondValue, double expected)
+        {
+            ICalculator calc = new Multiply();
+            double result = calc.Calculate(5, 5);
+            Assert.AreEqual(25, result);
         }
-    
+    }
 }

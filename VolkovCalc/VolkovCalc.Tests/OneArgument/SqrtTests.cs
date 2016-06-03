@@ -6,15 +6,14 @@ namespace VolkovCalc.Tests.OneArgument
     [TestFixture]
     public class SqrtTests
     {
-
-        [Test]           
-
-            public void CalculateTest()
-            {
+        [TestCase(25, 5)]
+        [TestCase(9, 3)]
+        [TestCase(4, 2)]
+        public void CalculateTest(double firstValue, double expected)
+        {
             ISingleCalc calc = new Sqrt();
-            double result = calc.Calculate(9);
-                Assert.AreEqual(3, result);
-            }
+            double result = calc.Calculate(25);
+            Assert.AreEqual(5, result);
         }
     }
 }
